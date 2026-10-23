@@ -20,6 +20,7 @@ function Label({n,children}){return <div className="label"><span>{n}</span>{chil
 export default function Home(){return <main>
   <nav><a className="wordmark" href="#top">EvolveIR <span>2027</span></a><div className="navlinks"><a href="#about">About</a><a href="#topics">Topics</a><a href="#submit">Submit</a><a href="#people">People</a></div><a className="navdate" href="#dates">25.03.27</a></nav>
   <header className="hero" id="top">
+    <div className="heroimage" style={{backgroundImage:`url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/southampton-hero.png)`}} aria-hidden="true"/>
     <div className="meta"><span>ECIR 2027 Workshop</span><span>Southampton, UK</span></div>
     <motion.div className="title" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}}><h1>EvolveIR <em>2027</em></h1><div className="line"><i/><i/><i/></div></motion.div>
     <div className="herofoot"><motion.p initial={{opacity:0,y:16}} animate={{opacity:1,y:0}} transition={{delay:.2,duration:.7}}>Workshop on Evolving Information Retrieval and Recommendation Systems</motion.p><motion.a initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.4}} href="#about">Discover <b>↓</b></motion.a></div>
