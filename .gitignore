@@ -1,2 +1,5 @@
 tmp/
 *.log
+.next/
+out/
+node_modules/
