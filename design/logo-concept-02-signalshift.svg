@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#161917"/>
+  <g transform="translate(105 100)" fill="none" stroke-linecap="square">
+    <path d="M10 40H330" stroke="#f2efe7" stroke-width="22"/>
+    <path d="M10 145H245" stroke="#f2efe7" stroke-width="22"/>
+    <path d="M10 250H330" stroke="#f2efe7" stroke-width="22"/>
+    <path d="M245 145H405" stroke="#ff5733" stroke-width="22"/>
+    <path d="M375 115L405 145 375 175" stroke="#ff5733" stroke-width="22"/>
+  </g>
+  <text x="620" y="225" fill="#f2efe7" font-family="Arial, sans-serif" font-size="90" font-weight="700" letter-spacing="-5">EvolveIR</text>
+  <text x="625" y="285" fill="#ff5733" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="6">2027 · SIGNAL SHIFT</text>
+</svg>

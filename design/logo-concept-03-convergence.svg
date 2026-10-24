@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#e7e3d8"/>
+  <g transform="translate(70 20)" fill="none" stroke="#161917" stroke-width="10">
+    <circle cx="230" cy="230" r="170" opacity=".18"/><circle cx="230" cy="230" r="112" opacity=".45"/><circle cx="230" cy="230" r="52"/>
+    <path d="M55 325C125 325 140 230 230 230s105-95 175-95" stroke="#ff5733" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="55" cy="325" r="14" fill="#ff5733" stroke="none"/><circle cx="230" cy="230" r="14" fill="#ff5733" stroke="none"/><circle cx="405" cy="135" r="14" fill="#ff5733" stroke="none"/>
+  </g>
+  <text x="600" y="225" fill="#161917" font-family="Arial, sans-serif" font-size="90" font-weight="700" letter-spacing="-5">EvolveIR</text>
+  <text x="605" y="285" fill="#ff5733" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="6">2027 · CONVERGENCE</text>
+</svg>

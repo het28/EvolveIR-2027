@@ -24,10 +24,11 @@ const submissions = [
 ];
 
 const organisers = [
-  { name: "Het Darshan Mehta", affiliation: "Otto von Guericke University Magdeburg, Germany", image: "het.webp", url: "https://hetmehta.eu" },
-  { name: "Erasmo Purificato", affiliation: "European Commission, Joint Research Centre, Ispra, Italy", image: "erasmo.webp", url: "https://erasmopurif.com" },
-  { name: "Federica Cena", affiliation: "University of Turin, Italy", image: "federica.webp", url: "https://www.didattica-cps.unito.it/do/docenti.pl/Alias?federica.cena#tab-profilo" },
-  { name: "Ernesto William De Luca", affiliation: "Otto von Guericke University Magdeburg, Germany", image: "ernesto.webp", url: "https://ernestodeluca.eu" }
+  { name: "Het Darshan Mehta", affiliation: "Otto von Guericke University Magdeburg, Germany", image: "het.webp", url: "https://hetmehta.eu", bio: "PhD researcher working on fair and responsible AI, recommender systems, graph-based and knowledge-aware recommendation, and algorithmic fairness. He coordinates submissions, reviewer communication, the workshop website, and overall organisation." },
+  { name: "Giulia Coucourde", affiliation: "University of Turin, Italy", image: null, url: "https://dott-informatica.campusnet.unito.it/do/studenti.pl/Show?_id=802321", bio: "PhD researcher in Computer Science whose work focuses on user modelling, personalisation, lifelong learning, knowledge graphs, and large language models. Her doctoral research investigates dynamic and interpretable user knowledge representations that evolve through continuing interaction. She contributes expertise in continual user modelling, knowledge-aware adaptation, LLM-KG integration, and longitudinal evaluation." },
+  { name: "Erasmo Purificato", affiliation: "European Commission, Joint Research Centre, Ispra, Italy", image: "erasmo.webp", url: "https://erasmopurif.com", bio: "Scientific Project Officer at the European Centre for Algorithmic Transparency. His research covers trustworthy algorithmic systems, algorithmic fairness, responsible AI, and user modelling. He supports the scientific programme, reviewer recruitment, and discussion sessions." },
+  { name: "Federica Cena", affiliation: "University of Turin, Italy", image: "federica.webp", url: "https://www.didattica-cps.unito.it/do/docenti.pl/Alias?federica.cena#tab-profilo", bio: "Associate Professor working at the intersection of artificial intelligence, user modelling, personalisation, and human-computer interaction, with particular attention to adaptive systems, diverse user needs, inclusive information access, and longitudinal user-centred evaluation." },
+  { name: "Ernesto William De Luca", affiliation: "Otto von Guericke University Magdeburg, Germany", image: "ernesto.webp", url: "https://ernestodeluca.eu", bio: "Professor whose research spans information retrieval, recommender systems, machine learning, user modelling, natural language processing, semantic technologies, and human-centred AI. He contributes extensive experience in workshop organisation and community building." }
 ];
 
 function Label({ n, children }) {
@@ -46,14 +47,13 @@ export default function Home() {
 
     <header className="hero" id="top">
       <div className="heroimage" style={{ backgroundImage: `url(${base}/southampton-photo.webp)` }} aria-hidden="true" />
-      <div className="meta"><span>49th European Conference on Information Retrieval</span><span>Southampton, United Kingdom</span></div>
+      <div className="meta"><span>25 March 2027</span><span>Southampton, United Kingdom</span></div>
       <motion.div className="title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <p className="heroedition">1st International Workshop on Evolving Information Retrieval and Recommendation Systems</p>
         <h1>EvolveIR <em>2027</em></h1>
         <div className="line"><i /><i /><i /></div>
       </motion.div>
       <div className="herofoot">
-        <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}>Information access under change.</motion.p>
+        <motion.div className="heroidentity" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}><strong>1st International Workshop on Evolving Information Retrieval and Recommendation Systems</strong><span>At the 49th European Conference on Information Retrieval (ECIR 2027)</span></motion.div>
         <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} href="#submit">Call for papers <b>↓</b></motion.a>
       </div>
     </header>
@@ -104,7 +104,7 @@ export default function Home() {
     <section className="organisers">
       <Label n="06">Organisers</Label>
       <motion.h2 {...reveal}>The organising committee.</motion.h2>
-      <div className="peoplecards">{organisers.map(({ name, affiliation, image, url }) => <motion.a {...reveal} key={name} href={url} target="_blank" rel="noreferrer"><img src={`${base}/people/${image}`} alt={name} /><div><h3>{name}</h3><p>{affiliation}</p><b>View profile ↗</b></div></motion.a>)}</div>
+      <div className="peoplecards">{organisers.map(({ name, affiliation, image, url, bio }) => <motion.article {...reveal} key={name}>{image ? <img src={`${base}/people/${image}`} alt={name} /> : <div className="photoplaceholder" role="img" aria-label={`Photograph of ${name} to be added`}><span>Photo</span><small>To be added</small></div>}<div><h3>{name}</h3><p className="affiliation">{affiliation}</p><p className="organiserbio">{bio}</p><a href={url} target="_blank" rel="noreferrer">View profile ↗</a></div></motion.article>)}</div>
     </section>
 
     <section className="committee" id="committee">
