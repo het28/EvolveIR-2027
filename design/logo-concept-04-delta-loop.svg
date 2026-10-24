@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#f2efe7"/>
+  <g transform="translate(95 92)" fill="none" stroke="#161917" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 258 160 24l135 234H25Z"/>
+    <path d="M74 211c53-85 112-90 172-28" stroke="#ff5733"/>
+    <path d="m224 154 27 31-40 8" stroke="#ff5733"/>
+  </g>
+  <text x="445" y="238" fill="#161917" font-family="Arial,Helvetica,sans-serif" font-size="112" font-weight="700" letter-spacing="-7">EvolveIR</text>
+  <text x="450" y="303" fill="#ff5733" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" letter-spacing="8">DELTA LOOP</text>
+</svg>

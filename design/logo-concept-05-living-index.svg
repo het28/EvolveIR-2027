@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#f2efe7"/>
+  <g transform="translate(75 86)">
+    <path d="M36 38h250M36 126h190M36 214h225M36 302h150" stroke="#161917" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="286" cy="38" r="17" fill="#ff5733"/><circle cx="226" cy="126" r="17" fill="#ff5733"/><circle cx="261" cy="214" r="17" fill="#ff5733"/><circle cx="186" cy="302" r="17" fill="#ff5733"/>
+    <path d="M286 38C178 77 354 166 226 126s112 135 35 88-7 65-75 88" fill="none" stroke="#ff5733" stroke-width="7"/>
+  </g>
+  <text x="445" y="238" fill="#161917" font-family="Arial,Helvetica,sans-serif" font-size="112" font-weight="700" letter-spacing="-7">EvolveIR</text>
+  <text x="450" y="303" fill="#ff5733" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" letter-spacing="8">LIVING INDEX</text>
+</svg>

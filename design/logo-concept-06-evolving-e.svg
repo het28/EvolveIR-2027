@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#161917"/>
+  <g transform="translate(92 90)" fill="none" stroke-linecap="round">
+    <path d="M245 25H55v275h190" stroke="#f2efe7" stroke-width="22"/>
+    <path d="M55 163h142" stroke="#f2efe7" stroke-width="22"/>
+    <path d="M197 163c58 0 66-82 117-82" stroke="#ff5733" stroke-width="16"/>
+    <circle cx="314" cy="81" r="17" fill="#ff5733" stroke="none"/>
+  </g>
+  <text x="445" y="238" fill="#f2efe7" font-family="Arial,Helvetica,sans-serif" font-size="112" font-weight="700" letter-spacing="-7">EvolveIR</text>
+  <text x="450" y="303" fill="#ff5733" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" letter-spacing="8">EVOLVING E</text>
+</svg>

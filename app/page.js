@@ -53,7 +53,7 @@ export default function Home() {
         <div className="line"><i /><i /><i /></div>
       </motion.div>
       <div className="herofoot">
-        <motion.div className="heroidentity" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}><strong>1st International Workshop on Evolving Information Retrieval and Recommendation Systems</strong><span>At the 49th European Conference on Information Retrieval (ECIR 2027)</span></motion.div>
+        <motion.div className="heroidentity" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}><strong>1st International Workshop on Evolving Information Retrieval and Recommendation Systems</strong><a href="https://www.ecir2027.co.uk/" target="_blank" rel="noreferrer">At the 49th European Conference on Information Retrieval <b>ECIR 2027 ↗</b></a></motion.div>
         <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} href="#submit">Call for papers <b>↓</b></motion.a>
       </div>
     </header>
@@ -94,11 +94,12 @@ export default function Home() {
     </section>
 
     <section className="keynote dark" id="people">
-      <Label n="05">Invited speaker</Label>
+      <Label n="05">Keynote speakers</Label>
       <div className="keygrid">
         <motion.div className="speakerphoto" {...reveal}><img src={`${base}/people/ludovico.webp`} alt="Ludovico Boratto" /></motion.div>
-        <motion.div {...reveal}><p className="overline">Invited keynote</p><h2>Ludovico<br /><em>Boratto</em></h2><p className="role">Associate Professor of Computer Science<br />University of Cagliari, Italy</p><p className="bio">His research spans recommender systems, user modelling, algorithmic fairness, multi-stakeholder recommendation, and responsible evaluation.</p><div className="talktitle"><span>Keynote title</span><strong>To be announced</strong></div><a href="https://www.ludovicoboratto.com/" target="_blank" rel="noreferrer">Speaker website ↗</a></motion.div>
+        <motion.div {...reveal}><p className="overline">Confirmed invited keynote</p><h2>Ludovico<br /><em>Boratto</em></h2><p className="role">Associate Professor of Computer Science<br /><a href="https://www.unica.it/" target="_blank" rel="noreferrer">University of Cagliari, Italy ↗</a></p><p className="bio">Ludovico Boratto studies recommender systems and their impact on different stakeholders, considering both accuracy and beyond-accuracy evaluation. His work spans algorithmic fairness, responsible and multi-stakeholder recommendation, explainability, group recommendation, and the societal effects of personalised systems.</p><p className="bio">He has authored more than 100 papers, delivered talks and tutorials at international conferences and research centres, and co-authored the Springer book <em>Group Recommender Systems: An Introduction</em>. He serves on editorial boards across information processing, knowledge systems, and intelligent information systems, and is a member of ACM and IEEE.</p><div className="speakerfacts"><span><small>Research</small>Recommender systems · Fairness · Responsible AI</span><span><small>Experience</small>100+ research papers · International invited talks</span></div><div className="talktitle"><span>Keynote title</span><strong>To be announced</strong></div><div className="speakerlinks"><a href="https://www.ludovicoboratto.com/" target="_blank" rel="noreferrer">Website ↗</a><a href="https://www.ludovicoboratto.com/short-bio/" target="_blank" rel="noreferrer">Full biography ↗</a><a href="https://www.ludovicoboratto.com/publications/" target="_blank" rel="noreferrer">Publications ↗</a></div></motion.div>
       </div>
+      <motion.div className="morespeakers" {...reveal}><span>More voices</span><div><h3>Additional invited speakers</h3><p>Further keynote announcements will appear here as invitations are confirmed.</p></div><strong>To be announced</strong></motion.div>
     </section>
 
     <section className="organisers">
