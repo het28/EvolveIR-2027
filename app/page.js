@@ -53,7 +53,7 @@ export default function Home() {
         <div className="line"><i /><i /><i /></div>
       </motion.div>
       <div className="herofoot">
-        <motion.div className="heroidentity" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}><strong>1st International Workshop on Evolving Information Retrieval and Recommendation Systems</strong><a href="https://www.ecir2027.co.uk/" target="_blank" rel="noreferrer">At the 49th European Conference on Information Retrieval <b>ECIR 2027 ↗</b></a></motion.div>
+        <motion.div className="heroidentity" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}><span className="workshopdate">25 March 2027</span><strong>1st International Workshop on Evolving Information Retrieval and Recommendation Systems</strong><a href="https://www.ecir2027.co.uk/" target="_blank" rel="noreferrer">At the 49th European Conference on Information Retrieval <b>ECIR 2027 ↗</b></a></motion.div>
         <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} href="#submit">Call for papers <b>↓</b></motion.a>
       </div>
     </header>
@@ -82,7 +82,24 @@ export default function Home() {
         <div><span>Language</span><strong>English</strong></div><div><span>Format</span><strong>PDF · Template TBA</strong></div><div><span>Review</span><strong>Double-blind · 3 reviewers</strong></div><div><span>Presentation</span><strong>At least one author must attend</strong></div>
       </motion.div>
       <div className="submitactions"><a className="primarybutton disabledbutton" aria-disabled="true">Submit your paper</a><span>Submission link will be announced.</span></div>
-      <p className="note">Page limits exclude references. Submissions must be anonymised and not previously published or accepted in substantially similar form. Proceedings information and the paper template will be announced after confirmation of the ECIR 2027 publication arrangements.</p>
+      <div className="submissiondetails">
+        <h3>Submission details</h3>
+        <p>We invite authors to submit unpublished original papers written in English. Submitted papers must not have been previously published or accepted for publication in substantially similar form in a peer-reviewed journal, conference, or workshop.</p>
+        <p>Authors should consult <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19242230/data/v13" target="_blank" rel="noreferrer">Springer&rsquo;s author guidelines</a> and use the proceedings templates in <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v7" target="_blank" rel="noreferrer">LaTeX</a>, including the <a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj" target="_blank" rel="noreferrer">Overleaf template</a>, or <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238706/data/v3" target="_blank" rel="noreferrer">Word</a>.</p>
+        <p>Papers must be submitted as PDF files. The EvolveIR submission link will be announced here when available.</p>
+        <h4>Submission types</h4>
+        <p><strong>Full papers (12 pages)</strong> should be clearly positioned with respect to the state of the art and state the contribution within their application domain. Research papers should describe the methodology in detail, present repeatable experiments, and compare the proposed approach with relevant existing work.</p>
+        <p><strong>Reproducibility papers (12 pages)</strong> should repeat prior experiments using the original source code and datasets to study how, why, and when methods work, or repeat prior experiments in new contexts such as different domains, datasets, evaluations, or metrics to further generalise and validate previous work.</p>
+        <p><strong>Short papers (6 pages)</strong> should present novel, thought-provoking ideas or innovative applications within the workshop topics, with comparative experimental results even when preliminary.</p>
+        <p><strong>Position papers (4 pages)</strong> should introduce new points of view on the workshop topics or summarise a group&rsquo;s experience in the field.</p>
+        <p>Submissions may exceed the indicated page limits only for references.</p>
+        <h4>Review and publication</h4>
+        <p>All submissions will undergo a double-blind review and be assessed by at least three reviewers for workshop relevance, novelty and originality, significance, technical quality and correctness, clarity of presentation, quality of references, and reproducibility.</p>
+        <p>Submissions that are not properly anonymised, do not comply with the template, or do not follow these guidelines may be rejected without review.</p>
+        <p>Accepted papers and material generated during the meeting will be made available on the workshop website. Proceedings information will be announced after confirmation of the ECIR 2027 publication arrangements. Authors of selected papers may be invited to submit an extended version to a journal special issue.</p>
+        <p>At least one author of each accepted paper must register for and attend the workshop to present the work.</p>
+        <p>Authors, programme committee members, and organisers are expected to follow the <a href="https://www.acm.org/special-interest-groups/volunteer-resources/acm-conflict-of-interest-policy" target="_blank" rel="noreferrer">ACM Conflict of Interest Policy</a> and the <a href="https://www.acm.org/code-of-ethics" target="_blank" rel="noreferrer">ACM Code of Ethics and Professional Conduct</a>.</p>
+      </div>
       <motion.aside className="participate" {...reveal}><span>Participation</span><div><h3>Join the discussion.</h3><p>An accepted paper is not required to attend. ECIR participants interested in evolving retrieval, recommendation, user modelling, continual learning, RAG, and responsible information access are welcome.</p><a href="#submit">Read the call for papers ↑</a></div></motion.aside>
     </section>
 
@@ -99,7 +116,6 @@ export default function Home() {
         <motion.div className="speakerphoto" {...reveal}><img src={`${base}/people/ludovico.webp`} alt="Ludovico Boratto" /></motion.div>
         <motion.div {...reveal}><p className="overline">Confirmed invited keynote</p><h2>Ludovico<br /><em>Boratto</em></h2><p className="role">Associate Professor of Computer Science<br /><a href="https://www.unica.it/" target="_blank" rel="noreferrer">University of Cagliari, Italy ↗</a></p><p className="bio">Ludovico Boratto studies recommender systems and their impact on different stakeholders, considering both accuracy and beyond-accuracy evaluation. His work spans algorithmic fairness, responsible and multi-stakeholder recommendation, explainability, group recommendation, and the societal effects of personalised systems.</p><p className="bio">He has authored more than 100 papers, delivered talks and tutorials at international conferences and research centres, and co-authored the Springer book <em>Group Recommender Systems: An Introduction</em>. He serves on editorial boards across information processing, knowledge systems, and intelligent information systems, and is a member of ACM and IEEE.</p><div className="speakerfacts"><span><small>Research</small>Recommender systems · Fairness · Responsible AI</span><span><small>Experience</small>100+ research papers · International invited talks</span></div><div className="talktitle"><span>Keynote title</span><strong>To be announced</strong></div><div className="speakerlinks"><a href="https://www.ludovicoboratto.com/" target="_blank" rel="noreferrer">Website ↗</a><a href="https://www.ludovicoboratto.com/short-bio/" target="_blank" rel="noreferrer">Full biography ↗</a><a href="https://www.ludovicoboratto.com/publications/" target="_blank" rel="noreferrer">Publications ↗</a></div></motion.div>
       </div>
-      <motion.div className="morespeakers" {...reveal}><span>More voices</span><div><h3>Additional invited speakers</h3><p>Further keynote announcements will appear here as invitations are confirmed.</p></div><strong>To be announced</strong></motion.div>
     </section>
 
     <section className="organisers">
