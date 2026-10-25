@@ -2,9 +2,8 @@
 @media(max-width:760px){nav{grid-template-columns:1fr auto}.navlinks{display:none}.hero{min-height:600px}.hero .meta span:last-child{display:none}.hero h1{white-space:normal;font-size:22vw}.herofoot{display:block}.herofoot a{display:inline-block;margin-top:2rem}.about,.topics,.submit,.dates,.keynote,.organisers{padding:6rem 6vw}.label{margin-bottom:4rem}.twocol,.sectionhead,.keygrid{grid-template-columns:1fr}.twocol{margin-left:0;gap:1rem}.sectionhead>p{margin-top:2rem}.topiclist{margin-top:4rem}.topiclist article{grid-template-columns:38px 1fr}.topiclist ul{grid-column:2;margin-top:1rem}.paperlist>div{grid-template-columns:38px 1fr}.paperlist b{grid-column:2}.peoplelist a{grid-template-columns:35px 1fr 20px}.peoplelist p{grid-column:2}.peoplelist b{grid-column:3;grid-row:1}.initials{max-width:420px;margin-bottom:3rem}footer h2{white-space:normal;font-size:20vw}footer>.meta{display:block}footer>.meta span{display:block;margin-bottom:.4rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-/* Preserve organiser photos; crop Het's portrait to match the card frame. */
+/* Preserve each organiser's complete original photograph without cropping. */
 .peoplecards img{object-fit:contain;background:#e7e3d8}
-.peoplecards>article:first-child img{object-fit:cover;object-position:center}
 
 /* Southampton editorial hero */
 .hero{position:relative;background:#17232c;color:#f7f4ec}
