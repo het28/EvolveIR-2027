@@ -118,7 +118,6 @@ export default function Home() {
     </section>
 
     <section className="committee" id="committee">
-      <div className="sectionmark" aria-hidden="true">EvolveIR <em>2027</em></div>
       <Label n="07">Programme committee</Label>
       <motion.div {...reveal}><p>Programme committee</p><h2>To be announced.</h2><span>Members will be added following confirmation and invitation.</span></motion.div>
     </section>
