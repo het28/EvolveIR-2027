@@ -59,6 +59,7 @@ export default function Home() {
     </header>
 
     <section className="about" id="about">
+      <div className="sectionmark" aria-hidden="true">EvolveIR <em>2027</em></div>
       <Label n="01">About</Label>
       <motion.h2 {...reveal}>Information access<br />does not stand still.</motion.h2>
       <div className="twocol">
@@ -95,6 +96,7 @@ export default function Home() {
     </section>
 
     <section className="dates" id="dates">
+      <div className="sectionmark" aria-hidden="true">EvolveIR <em>2027</em></div>
       <Label n="04">Important dates</Label>
       <motion.h2 {...reveal}>Save the date.</motion.h2>
       <div className="datelist">{["Submission deadline", "Acceptance notification", "Camera-ready deadline"].map(item => <motion.div {...reveal} key={item}><span>{item}</span><strong>To be announced</strong></motion.div>)}<motion.div {...reveal} className="confirmed"><span>Workshop</span><strong>25 March 2027</strong></motion.div></div>
@@ -116,6 +118,7 @@ export default function Home() {
     </section>
 
     <section className="committee" id="committee">
+      <div className="sectionmark" aria-hidden="true">EvolveIR <em>2027</em></div>
       <Label n="07">Programme committee</Label>
       <motion.div {...reveal}><p>Programme committee</p><h2>To be announced.</h2><span>Members will be added following confirmation and invitation.</span></motion.div>
     </section>
