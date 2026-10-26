@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160" role="img" aria-labelledby="title">
+  <title id="title">EvolveIR folded checkerboard mark</title>
+  <g fill="#161917">
+    <path d="M14 106 34 96 54 106 34 116Z"/>
+    <path d="M36 82 56 72 76 82 56 92Z"/>
+    <path d="M56 106 76 96 96 106 76 116Z"/>
+    <path d="M36 130 56 120 76 130 56 140Z"/>
+    <path d="M78 82 98 72 112 79 104 96Z"/>
+    <path d="M106 68 126 56 126 78 106 90Z"/>
+    <path d="M128 54 148 42 148 64 128 76Z"/>
+    <path d="M106 94 126 82 126 104 106 116Z"/>
+    <path d="M128 80 148 68 148 90 128 102Z"/>
+  </g>
+  <path fill="#ff5733" d="M94 119 112 78 112 35 126 27 126 103Z"/>
+</svg>

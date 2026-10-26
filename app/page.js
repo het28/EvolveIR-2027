@@ -10,10 +10,24 @@ const reveal = {
 };
 
 const topics = [
-  ["Evolving retrieval", "Temporal and continual IR", "Changing collections and relevance", "Continual learning to rank"],
-  ["Users & recommendation", "Evolving preferences", "Long-term personalisation", "Feedback loops and drift"],
-  ["Knowledge & generation", "Dynamic knowledge graphs", "RAG over evolving corpora", "Memory and forgetting"],
-  ["Evaluation & responsibility", "Longitudinal protocols", "Robustness and stability", "Fairness and exposure over time"]
+  "Temporal and evolving information retrieval",
+  "Retrieval and ranking over changing collections",
+  "Evolving queries, information needs, and relevance",
+  "Continual, incremental, and lifelong retrieval",
+  "Online and continual learning to rank",
+  "Temporal and continual recommender systems",
+  "Evolving user models, preferences, and personalization",
+  "Session-based and sequential information access",
+  "User-system feedback loops and behavioral dynamics",
+  "Adaptation under distribution, preference, and concept drift",
+  "Dynamic knowledge graphs and knowledge-enhanced retrieval",
+  "RAG over evolving corpora and knowledge sources",
+  "Updating, memory, and forgetting in generative information-access systems",
+  "Longitudinal and temporal evaluation protocols",
+  "Datasets, benchmarks, and simulation environments for evolving information access",
+  "Robustness, stability, and catastrophic forgetting in retrieval and recommendation",
+  "Fairness, exposure, popularity, diversity, and multi-stakeholder outcomes over time",
+  "Transparency, accountability, and user agency in adaptive information-access systems"
 ];
 
 const submissions = [
@@ -49,7 +63,7 @@ export default function Home() {
       <div className="heroimage" style={{ backgroundImage: `url(${base}/southampton-photo.webp)` }} aria-hidden="true" />
       <div className="meta"><span>25 March 2027</span><span>Southampton, United Kingdom</span></div>
       <motion.div className="title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <h1>EvolveIR <em>2027</em></h1>
+        <div className="heroheading"><img src={`${base}/evolveir-mark.svg`} alt="" /><h1>EvolveIR <em>2027</em></h1></div>
         <div className="line"><i /><i /><i /></div>
       </motion.div>
       <div className="herofoot">
@@ -72,7 +86,7 @@ export default function Home() {
     <section className="topics dark" id="topics">
       <Label n="02">Topics</Label>
       <motion.div className="sectionhead" {...reveal}><h2>Research across<br /><em>the whole timeline.</em></h2><p>We welcome methodological, empirical, resource, and position contributions.</p></motion.div>
-      <div className="topiclist">{topics.map((topic, i) => <motion.article {...reveal} key={topic[0]}><span>0{i + 1}</span><h3>{topic[0]}</h3><ul>{topic.slice(1).map(item => <li key={item}>{item}</li>)}</ul></motion.article>)}</div>
+      <motion.ul className="topicpoints" {...reveal}>{topics.map(topic => <li key={topic}>{topic}</li>)}</motion.ul>
     </section>
 
     <section className="submit" id="submit">
@@ -80,10 +94,11 @@ export default function Home() {
       <motion.div className="sectionhead" {...reveal}><h2>Submit your work.</h2><p>Choose the paper format that best fits your contribution to evolving information retrieval and recommendation.</p></motion.div>
       <div className="submissiongrid">{submissions.map(([name, length, description], i) => <motion.article {...reveal} key={name}><span>0{i + 1}</span><div><h3>{name}</h3><strong>{length} + references</strong><p>{description}</p></div></motion.article>)}</div>
       <motion.div className="submissionrules" {...reveal}>
-        <div><span>Language</span><strong>English</strong></div><div><span>Format</span><strong>PDF · Springer template</strong></div><div><span>Review</span><strong>Double-blind · 3 reviewers</strong></div><div><span>Presentation</span><strong>At least one author must attend</strong></div>
+        <div><span>Language</span><strong>English</strong></div><div><span>Format</span><strong>PDF · Springer template</strong></div><div><span>Review</span><strong>Double-blind · 2 reviewers</strong></div><div><span>Presentation</span><strong>At least one author must attend</strong></div>
       </motion.div>
       <div className="submitactions"><a className="primarybutton disabledbutton" aria-disabled="true">Submit your paper</a><span>Submission link will be announced.</span></div>
       <div className="submissiondetails">
+        <img className="submissionlogo" src={`${base}/evolveir-mark.svg`} alt="EvolveIR folded checkerboard logo" />
         <h3>Submission details</h3>
         <p>Submissions must be original and must not have been previously published or accepted for publication in substantially similar form in a peer-reviewed journal, conference, or workshop.</p>
         <p>Authors should consult <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19242230/data/v13" target="_blank" rel="noreferrer">Springer&rsquo;s author guidelines</a> and use the proceedings templates in <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v7" target="_blank" rel="noreferrer">LaTeX</a>, including the <a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj" target="_blank" rel="noreferrer">Overleaf template</a>, or <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238706/data/v3" target="_blank" rel="noreferrer">Word</a>.</p>
@@ -92,7 +107,7 @@ export default function Home() {
         <p>Accepted papers and material generated during the meeting will be made available on the workshop website. Proceedings information will be announced after confirmation of the ECIR 2027 publication arrangements. Authors of selected papers may be invited to submit an extended version to a journal special issue.</p>
         <p>Authors, programme committee members, and organisers are expected to follow the <a href="https://www.acm.org/special-interest-groups/volunteer-resources/acm-conflict-of-interest-policy" target="_blank" rel="noreferrer">ACM Conflict of Interest Policy</a> and the <a href="https://www.acm.org/code-of-ethics" target="_blank" rel="noreferrer">ACM Code of Ethics and Professional Conduct</a>.</p>
       </div>
-      <motion.aside className="participate" {...reveal}><span>Participation</span><div><h3>Join the discussion.</h3><p>An accepted paper is not required to attend. ECIR participants interested in evolving retrieval, recommendation, user modelling, continual learning, RAG, and responsible information access are welcome.</p><a href="#submit">Read the call for papers ↑</a></div></motion.aside>
+      <motion.aside className="participate" {...reveal}><span>Participation</span><div><h3>Join the discussion.</h3><p>An accepted paper is not required to attend. ECIR participants interested in evolving retrieval, recommendation, user modelling, continual learning, RAG, and responsible information access are welcome.</p><div className="participatelinks"><a href="#submit">Read the call for papers ↑</a><a className="registerbutton" href="https://www.ecir2027.co.uk/registration" target="_blank" rel="noreferrer">Register here ↗</a></div></div></motion.aside>
     </section>
 
     <section className="dates" id="dates">
@@ -119,7 +134,7 @@ export default function Home() {
 
     <section className="committee" id="committee">
       <Label n="07">Programme committee</Label>
-      <motion.div {...reveal}><p>Programme committee</p><h2>To be announced.</h2><span>Members will be added following confirmation and invitation.</span></motion.div>
+      <motion.div {...reveal}><h2>Programme committee <small>To be announced</small></h2><span>Members will be added following confirmation and invitation.</span></motion.div>
     </section>
 
     <footer><div className="meta"><span>25 March 2027</span><span>Southampton, United Kingdom</span></div><h2>EvolveIR <em>2027</em></h2><div className="footerlinks"><a href="https://www.ecir2027.co.uk/" target="_blank" rel="noreferrer">ECIR 2027 ↗</a><a href="mailto:het.mehta@ovgu.de">Contact ↗</a><a href="https://commons.wikimedia.org/wiki/File:Town_quay_southampton_march_2025.JPG" target="_blank" rel="noreferrer">Photo: Geni · CC BY-SA 4.0 ↗</a></div></footer>
