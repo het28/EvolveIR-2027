@@ -42,17 +42,17 @@
 @media(max-width:760px){.heroidentity{max-width:92%}.heroidentity .workshopdate,.heroidentity strong,.heroidentity>a{font-size:.66rem;white-space:normal}.submissiongrid{grid-template-columns:1fr;margin-top:4rem}.submissiongrid article{min-height:auto;padding:1.6rem}.submissionrules{grid-template-columns:1fr}.submissionrules div{border-right:0}.submitactions{align-items:flex-start;flex-direction:column}.participate{grid-template-columns:1fr;padding:2rem}.speakerfacts,.morespeakers{grid-template-columns:1fr}.speakerfacts span+span{border-left:0;border-top:1px solid #444843;padding-left:0}.morespeakers>strong{margin-top:1rem}.peoplecards>article{grid-template-columns:1fr}.peoplecards>article:nth-child(n) img,.peoplecards>article:nth-child(n) .photoplaceholder{order:0}.peoplecards img,.photoplaceholder{height:auto;min-height:0;aspect-ratio:1}.talktitle{flex-direction:column;gap:.4rem}.footerlinks{flex-direction:column;gap:1rem}}
 
 /* Keep Federica Cena's original portrait fully visible. */
-.peoplecards>article:nth-child(4) img{object-fit:contain;background:#e7e3d8;filter:none}
+.peoplecards>article:nth-child(4) img{object-fit:cover;background:var(--paper);filter:none}
 
 /* EvolveIR identity and content refinements */
 .heroheading{display:flex;align-items:center;gap:clamp(1rem,2.5vw,2.5rem)}
-.heroheading>img{width:clamp(320px,42vw,680px);height:auto;flex:0 0 auto;display:block}
+.heroheading>img{width:clamp(120px,15vw,230px);height:auto;flex:0 0 auto;display:block}
 .heroheading h1{min-width:0}
 .topicpoints{columns:2;column-gap:7vw;margin:6rem 0 0;padding:0;list-style:none;border-top:1px solid #444843}
 .topicpoints li{position:relative;break-inside:avoid;padding:1.15rem 0 1.15rem 1.5rem;border-bottom:1px solid #444843;color:#c3c6c0;line-height:1.45}
 .topicpoints li:before{content:"";position:absolute;left:0;top:1.65rem;width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .submissiondetails:before{display:none}
-.submissionlogo{position:absolute;right:calc(100% + 4rem);top:3rem;width:clamp(240px,24vw,380px);height:auto;filter:drop-shadow(0 0 1px var(--ink))}
+.submissionlogo{position:absolute;right:calc(100% + 3rem);top:1rem;width:clamp(330px,31vw,500px);height:auto}
 .participatelinks{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:1.5rem}
 .participate .participatelinks>a{margin:0}
 .participate .registerbutton{padding:.9rem 1.2rem;background:var(--accent);color:#fff;text-decoration:none}
@@ -65,7 +65,7 @@
 .committeecompact strong{text-transform:uppercase;letter-spacing:.1em;font-size:.7rem}
 .committeecompact small{color:var(--accent);font:700 .65rem var(--sans),sans-serif;letter-spacing:.1em;text-transform:uppercase}
 .committee>.committeecompact>p{margin:0 0 0 auto;color:var(--muted);font-size:.7rem;text-transform:none;letter-spacing:0;font-weight:400}
-.peoplecards>article:nth-child(4) img{padding:1.25rem;background:linear-gradient(145deg,#d6d2c7,#efebe2)}
+.peoplecards>article:nth-child(4) img{padding:0;background:var(--paper)}
 
 @media(max-width:1100px){.submissionlogo{display:none}.peoplecards>article:last-child{grid-column:auto;width:100%;grid-template-columns:1fr 1fr}.peoplecards>article:last-child>img,.peoplecards>article:last-child>div:last-child{grid-column:auto}}
-@media(max-width:760px){.heroheading{align-items:flex-start}.heroheading>img{width:min(88vw,520px)}.topicpoints{columns:1;margin-top:4rem}.committee{padding:2.5rem 6vw}.committee>.committeecompact{white-space:normal;flex-wrap:wrap}.committee>.committeecompact>p{width:100%;margin:0}.peoplecards>article:last-child{grid-template-columns:1fr}}
+@media(max-width:760px){.heroheading{align-items:center;gap:.75rem}.heroheading>img{width:88px}.heroheading h1{font-size:13vw}.topicpoints{columns:1;margin-top:4rem}.committee{padding:2.5rem 6vw}.committee>.committeecompact{white-space:normal;flex-wrap:wrap}.committee>.committeecompact>p{width:100%;margin:0}.peoplecards>article:last-child{grid-template-columns:1fr}}
