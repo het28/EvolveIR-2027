@@ -133,8 +133,7 @@ export default function Home() {
     </section>
 
     <section className="committee" id="committee">
-      <Label n="07">Programme committee</Label>
-      <motion.div {...reveal}><h2>Programme committee <small>To be announced</small></h2><span>Members will be added following confirmation and invitation.</span></motion.div>
+      <motion.div className="committeecompact" {...reveal}><span>07</span><strong>Programme committee</strong><small>To be announced</small><p>Members will be added following confirmation and invitation.</p></motion.div>
     </section>
 
     <footer><div className="meta"><span>25 March 2027</span><span>Southampton, United Kingdom</span></div><h2>EvolveIR <em>2027</em></h2><div className="footerlinks"><a href="https://www.ecir2027.co.uk/" target="_blank" rel="noreferrer">ECIR 2027 ↗</a><a href="mailto:het.mehta@ovgu.de">Contact ↗</a><a href="https://commons.wikimedia.org/wiki/File:Town_quay_southampton_march_2025.JPG" target="_blank" rel="noreferrer">Photo: Geni · CC BY-SA 4.0 ↗</a></div></footer>
