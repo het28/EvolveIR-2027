@@ -46,13 +46,13 @@
 
 /* EvolveIR identity and content refinements */
 .heroheading{display:flex;align-items:center;gap:clamp(1rem,2.5vw,2.5rem)}
-.heroheading>img{width:clamp(84px,9vw,150px);height:auto;flex:0 0 auto}
+.heroheading>img{width:clamp(320px,42vw,680px);height:auto;flex:0 0 auto;display:block}
 .heroheading h1{min-width:0}
 .topicpoints{columns:2;column-gap:7vw;margin:6rem 0 0;padding:0;list-style:none;border-top:1px solid #444843}
 .topicpoints li{position:relative;break-inside:avoid;padding:1.15rem 0 1.15rem 1.5rem;border-bottom:1px solid #444843;color:#c3c6c0;line-height:1.45}
 .topicpoints li:before{content:"";position:absolute;left:0;top:1.65rem;width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .submissiondetails:before{display:none}
-.submissionlogo{position:absolute;right:calc(100% + 4rem);top:3rem;width:clamp(210px,20vw,310px);height:auto}
+.submissionlogo{position:absolute;right:calc(100% + 4rem);top:3rem;width:clamp(240px,24vw,380px);height:auto}
 .participatelinks{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:1.5rem}
 .participate .participatelinks>a{margin:0}
 .participate .registerbutton{padding:.9rem 1.2rem;background:var(--accent);color:#fff;text-decoration:none}
@@ -68,4 +68,4 @@
 .peoplecards>article:nth-child(4) img{padding:1.25rem;background:linear-gradient(145deg,#d6d2c7,#efebe2)}
 
 @media(max-width:1100px){.submissionlogo{display:none}.peoplecards>article:last-child{grid-column:auto;width:100%;grid-template-columns:1fr 1fr}.peoplecards>article:last-child>img,.peoplecards>article:last-child>div:last-child{grid-column:auto}}
-@media(max-width:760px){.heroheading{align-items:flex-start}.heroheading>img{width:70px}.topicpoints{columns:1;margin-top:4rem}.committee{padding:2.5rem 6vw}.committee>.committeecompact{white-space:normal;flex-wrap:wrap}.committee>.committeecompact>p{width:100%;margin:0}.peoplecards>article:last-child{grid-template-columns:1fr}}
+@media(max-width:760px){.heroheading{align-items:flex-start}.heroheading>img{width:min(88vw,520px)}.topicpoints{columns:1;margin-top:4rem}.committee{padding:2.5rem 6vw}.committee>.committeecompact{white-space:normal;flex-wrap:wrap}.committee>.committeecompact>p{width:100%;margin:0}.peoplecards>article:last-child{grid-template-columns:1fr}}

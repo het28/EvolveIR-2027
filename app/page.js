@@ -63,7 +63,7 @@ export default function Home() {
       <div className="heroimage" style={{ backgroundImage: `url(${base}/southampton-photo.webp)` }} aria-hidden="true" />
       <div className="meta"><span>25 March 2027</span><span>Southampton, United Kingdom</span></div>
       <motion.div className="title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <div className="heroheading"><img src={`${base}/evolveir-mark.svg`} alt="" /><h1>EvolveIR <em>2027</em></h1></div>
+        <div className="heroheading"><img src={`${base}/evolveir-logo.png`} alt="EvolveIR 2027" /></div>
         <div className="line"><i /><i /><i /></div>
       </motion.div>
       <div className="herofoot">
@@ -98,7 +98,7 @@ export default function Home() {
       </motion.div>
       <div className="submitactions"><a className="primarybutton disabledbutton" aria-disabled="true">Submit your paper</a><span>Submission link will be announced.</span></div>
       <div className="submissiondetails">
-        <img className="submissionlogo" src={`${base}/evolveir-mark.svg`} alt="EvolveIR folded checkerboard logo" />
+        <img className="submissionlogo" src={`${base}/evolveir-logo.png`} alt="EvolveIR 2027 logo" />
         <h3>Submission details</h3>
         <p>Submissions must be original and must not have been previously published or accepted for publication in substantially similar form in a peer-reviewed journal, conference, or workshop.</p>
         <p>Authors should consult <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19242230/data/v13" target="_blank" rel="noreferrer">Springer&rsquo;s author guidelines</a> and use the proceedings templates in <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v7" target="_blank" rel="noreferrer">LaTeX</a>, including the <a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj" target="_blank" rel="noreferrer">Overleaf template</a>, or <a href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238706/data/v3" target="_blank" rel="noreferrer">Word</a>.</p>
