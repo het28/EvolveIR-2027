@@ -52,7 +52,7 @@
 .topicpoints li{position:relative;break-inside:avoid;padding:1.15rem 0 1.15rem 1.5rem;border-bottom:1px solid #444843;color:#c3c6c0;line-height:1.45}
 .topicpoints li:before{content:"";position:absolute;left:0;top:1.65rem;width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .submissiondetails:before{display:none}
-.submissionlogo{position:absolute;right:calc(100% + 4rem);top:3rem;width:clamp(240px,24vw,380px);height:auto}
+.submissionlogo{position:absolute;right:calc(100% + 4rem);top:3rem;width:clamp(240px,24vw,380px);height:auto;filter:drop-shadow(0 0 1px var(--ink))}
 .participatelinks{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:1.5rem}
 .participate .participatelinks>a{margin:0}
 .participate .registerbutton{padding:.9rem 1.2rem;background:var(--accent);color:#fff;text-decoration:none}
